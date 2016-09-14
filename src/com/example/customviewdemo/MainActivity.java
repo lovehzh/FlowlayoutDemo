@@ -47,14 +47,21 @@ public class MainActivity extends Activity implements OnClickListener, OnTouchLi
 		entity.setDev_name("aaa");
 		entity.setIcon_size(1);
 		listdata.add(entity);
+		
 		QuickViewEntity entity10 = new QuickViewEntity();
 		entity10.setDev_name("aaa");
 		entity10.setIcon_size(1);
 		listdata.add(entity10);
+		
 		QuickViewEntity entity11 = new QuickViewEntity();
 		entity11.setDev_name("aaa");
 		entity11.setIcon_size(1);
 		listdata.add(entity11);
+		
+		QuickViewEntity entity5 = new QuickViewEntity();
+		entity5.setDev_name("ccc");
+		entity5.setIcon_size(2);
+		listdata.add(entity5);
 		
 		QuickViewEntity entity12 = new QuickViewEntity();
 		entity12.setDev_name("aaa");
@@ -73,10 +80,10 @@ public class MainActivity extends Activity implements OnClickListener, OnTouchLi
 		entity4.setIcon_size(1);
 		listdata.add(entity4);
 		
-		QuickViewEntity entity5 = new QuickViewEntity();
-		entity5.setDev_name("eee");
-		entity5.setIcon_size(1);
-		listdata.add(entity5);
+		QuickViewEntity entity6 = new QuickViewEntity();
+		entity6.setDev_name("eee");
+		entity6.setIcon_size(1);
+		listdata.add(entity6);
 		
 		QuickViewEntity entity3 = new QuickViewEntity();
 		entity3.setDev_name("ccc");
@@ -86,7 +93,7 @@ public class MainActivity extends Activity implements OnClickListener, OnTouchLi
 	
 	private void initComponent() {
 		flowlayout = (FlowLayout) findViewById(R.id.flowlayout_device);
-		flowlayout.setLineSpacing(ScreenUtils.px2dip(this, (int) (5 * margin)));
+		flowlayout.setLineSpacing(ScreenUtils.px2dip(this, (int) (1 * margin)));
 		int width = (int) (getWindowManager().getDefaultDisplay().getWidth());
 		int height = (int) (getWindowManager().getDefaultDisplay().getHeight());
 
